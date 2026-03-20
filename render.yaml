@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: gig-insurance-backend
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: OPENWEATHER_API_KEY
+        sync: false
+      - key: WAQI_API_KEY
+        sync: false
+      - key: TOMTOM_API_KEY
+        sync: false
+      - key: AI_SERVICE_URL
+        sync: false
